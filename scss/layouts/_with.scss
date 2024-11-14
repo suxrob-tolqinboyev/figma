@@ -1,0 +1,65 @@
+.with {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 100px 0 100px 0;
+    }
+    &__title {
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 75.02px;
+      letter-spacing: 0.003em;
+      padding: 37px 162px 25px 0px;
+    }
+    &__sub-title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0.01em;
+      padding-bottom: 25px;
+    }
+    &__button {
+      width: 193px;
+      height: 48px;
+      padding: 12px 50px 12px 50px;
+      border-radius: 24px;
+      border: 1px solid #377dfd;
+      color: white;
+      background: #377dfd;
+      transition: 2s ease-in-out;
+    }
+    &__button:hover {
+      background: transparent;
+      color: #377dfd;
+    }
+    &__sub-wrapper {
+      position: relative;
+    }
+    &__img {
+      position: relative;
+      top: 92px;
+      z-index: 10;
+      left: 40px;
+    }
+    &__sub-wrapper::before {
+      content: " " url(./assets/icons/Group\ 2137.svg);
+      border: 1px solid black;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    &__img1 {
+      position: relative;
+      top: 6px;
+      right: 0px;
+    }
+  }
+  @media (max-width: 571px) {
+    .with {
+      &__wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+    }
+  }

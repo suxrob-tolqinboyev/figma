@@ -1,0 +1,123 @@
+.our {
+    &__wrapper {
+      padding-top: 100px;
+    }
+    &__sub-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+    &__litle-word {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: #377dff;
+    }
+    &__big-word {
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 75.02px;
+      letter-spacing: 0.003em;
+      text-align: center;
+      margin-bottom: 38px;
+    }
+    &__title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      padding: 25px 0 0px 65px;
+    }
+    &__sub-title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      padding: 0px 0 16px 0;
+    }
+    &__sub-dec {
+      padding: 0px 0 25px 0px;
+    }
+  
+    &__button {
+      width: 171px;
+      height: 48px;
+      padding: 12px 50px 12px 50px;
+      border-radius: 24px;
+      background: #377dff;
+      color: white;
+      border: 1px solid #377dff;
+      transition: 2s ease-in-out;
+    }
+    &__button:hover {
+      background: transparent;
+      color: #377dff;
+    }
+    &__buttun {
+      width: 210px;
+      height: 48px;
+      padding: 0px 50px 6px 50px;
+      border-radius: 24px;
+      border: 1px solid #377dff;
+      background: transparent;
+      transition: 2s ease-in-out;
+    }
+    &__buttun:hover {
+      background: #377dff;
+      color: white;
+    }
+    &__buttun::before {
+      content: url(/assets/icons/play-circle.svg);
+      color: #377dff;
+      position: relative;
+      top: 7px;
+      right: 10px;
+    }
+    &__mobile {
+      display: none;
+    }
+  }
+  @media (max-width: 571px) {
+    .our {
+      &__litle-word {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.5px;
+        letter-spacing: 0.01em;
+      }
+      &__big-word {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32.74px;
+        letter-spacing: 0.003em;
+      }
+      &__sub-wrapper {
+        flex-direction: column-reverse;
+      }
+      &__img {
+        margin: auto;
+        img {
+          width: 340px;
+          height: 258px;
+        }
+      }
+      &__sub-title {
+        position: relative;
+        left: -16px;
+      }
+      &__mobile {
+        display: block;
+      }
+      &__desktop {
+        display: none;
+      }
+      &__buttons {
+       position: relative;
+       right: 24px;
+        display: flex;
+        gap: 17px;
+        padding-bottom: 50px;
+      }
+    }
+  }

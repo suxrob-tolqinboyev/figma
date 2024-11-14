@@ -1,0 +1,12 @@
+.container {
+  width: 1190px;
+  margin: auto;
+  color: #464646;
+  border: 1px solid black;
+}
+
+@media (max-width: 571px) {
+  .container {
+    width: 100%;
+  }
+}

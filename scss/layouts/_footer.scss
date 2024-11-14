@@ -1,0 +1,17 @@
+.footer {
+    &__wrapper {
+      padding-top: 132px;
+      display: flex;
+      justify-content: space-between;
+      background: #464646;
+      color: white;
+    }
+    &__list {
+      list-style: none;
+    }
+    &__logo {
+      padding: 19px 25px 19px 25px;
+      background: white;
+      border-radius: 20px;
+    }
+  }

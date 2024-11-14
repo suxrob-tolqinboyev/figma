@@ -1,0 +1,110 @@
+.fast {
+    &__wrapper {
+      display: flex;
+      padding-top: 100px;
+    }
+    &__sub-info {
+      display: flex;
+      width: 262px;
+      height: 269px;
+    }
+    &__info {
+      padding: 66px 90px 96px 0;
+    }
+    &__sub-dec {
+      display: flex;
+    }
+    &__word-little {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      color: #377dff;
+      padding-bottom: 32px;
+    }
+    &__word-big {
+      font-family: Nunito;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 71.5px;
+      letter-spacing: 0.003em;
+      padding-bottom: 18px;
+    }
+    &__sub-word {
+      font-family: Quicksand;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      padding-bottom: 36px;
+      width: 520px;
+      height: 128px;
+    }
+    &__next {
+      position: relative;
+      left: 345px;
+    }
+    &__next-dec {
+      position: relative;
+      bottom: 8px;
+      right: 5px;
+    }
+    &__sub-wrapper {
+      display: flex;
+      gap: 41px;
+    }
+    &__wrap {
+      text-align: center;
+      padding: 35px 0 0px 0;
+      width: 262px;
+      height: 269px;
+      border-radius: 50px;
+      margin-bottom: 38px;
+      box-shadow: 4px 4px 30px 0px #0000001A;
+  
+  
+      img {
+        border-radius: 50%;
+        background: #377dff;
+        padding: 29px;
+      }
+      h3 {
+        padding: 35px;
+      }
+    }
+  }
+  @media (max-width: 571px) {
+    .fast {
+      &__info {
+        text-align: center;
+      }
+      &__word-little {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.5px;
+        letter-spacing: 0.01em;
+        text-align: center;
+      }
+      &__word-big {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32.74px;
+        letter-spacing: 0.003em;
+        align-items: center;
+      }
+      &__desktop{
+        display: none;
+      }
+      &__sub-word{
+        text-align: center;
+      }
+      &__sub-wrapper{
+        flex-direction: column;
+        align-items: center;
+      }
+      &__wrapper{
+        display: inline;
+        text-align: center;
+      }
+    }
+  }
